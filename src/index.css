@@ -1,2 +1,17 @@
 @import "tailwindcss";
 
+@theme {
+    --color-primary: #0D8267;
+    --color-tahiti: #3ab7bf;
+    --color-bermuda: #78dcca;
+    
+    /* Adding font family */
+    --font-poppins: "Funnel Sans", serif;
+}
+
+@layer base {
+    /* Applying the font */
+    :root {
+        font-family: var(--font-poppins);
+    }
+}
