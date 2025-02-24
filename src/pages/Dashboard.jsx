@@ -30,7 +30,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="p-2 sm:p-10 min-h-screen flex flex-col items-center">
+    <div className="p-4 sm:p-10 min-h-screen flex flex-col items-center">
       <Header title={"Projects"} />
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 w-full max-w-7xl sm:px-0">
         {projects.map((project, index) => {
