@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { MenuIcon, CloseIcon, HomeIcon, ProfileIcon, NoteIcon } from "../assets/icons/icons";
 import Logo from "../assets/logo.png";
 import AuthContext from "../store/AuthContext"; 
-
+import {MessageCircleQuestion} from 'lucide-react'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { isAuthenticated } = useContext(AuthContext);
@@ -48,6 +48,7 @@ export default function Navbar() {
 const NavLinks = ({ activePath, isMobile, onClose }) => {
   const links = [
     { name: "Home", path: "/", icon: <HomeIcon size={20} /> },
+    { name: "Questions", path: "/questions", icon: <MessageCircleQuestion size={20} /> },
     { name: "Instructions", path: "/instructions", icon: <NoteIcon size={20} /> },
     { name: "Profile", path: "/profile", icon: <ProfileIcon size={20} /> },
   ];

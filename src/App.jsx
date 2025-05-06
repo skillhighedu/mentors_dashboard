@@ -9,6 +9,7 @@ import Solutions from "./pages/Solutions";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Instructions from "./pages/Instructions";
+import Questions from "./pages/Questions";
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/instructions" element={<Instructions />} />
           <Route path="/project_solutions" element={<Solutions />} />
+          <Route path="/questions" element={<Questions/>} />
+
         </Route>
 
         {/* Redirect unknown routes */}
